@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.17+commit.8df45f5f"
+		"version": "0.8.18+commit.87f61d96"
 	},
 	"language": "Solidity",
 	"output": {
@@ -39,18 +39,46 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "fullName",
+						"name": "userName",
 						"type": "string"
 					},
 					{
 						"internalType": "uint256",
-						"name": "userCatergory",
+						"name": "userCccd",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "userEmail",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "userPhone",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "teamId",
 						"type": "uint256"
 					}
 				],
 				"name": "addUser",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkExistUser",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -73,7 +101,22 @@
 							},
 							{
 								"internalType": "string",
-								"name": "fullName",
+								"name": "userName",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "userCccd",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "userEmail",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "userPhone",
 								"type": "string"
 							},
 							{
@@ -83,13 +126,8 @@
 							},
 							{
 								"internalType": "uint256",
-								"name": "userCatergory",
+								"name": "teamId",
 								"type": "uint256"
-							},
-							{
-								"internalType": "bool",
-								"name": "userIsChecked",
-								"type": "bool"
 							}
 						],
 						"internalType": "struct User[]",
@@ -113,7 +151,22 @@
 							},
 							{
 								"internalType": "string",
-								"name": "fullName",
+								"name": "userName",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "userCccd",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "userEmail",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "userPhone",
 								"type": "string"
 							},
 							{
@@ -123,13 +176,8 @@
 							},
 							{
 								"internalType": "uint256",
-								"name": "userCatergory",
+								"name": "teamId",
 								"type": "uint256"
-							},
-							{
-								"internalType": "bool",
-								"name": "userIsChecked",
-								"type": "bool"
 							}
 						],
 						"internalType": "struct User",
@@ -202,7 +250,7 @@
 		"compilationTarget": {
 			"controller/user/UserController.sol": "UserController"
 		},
-		"evmVersion": "london",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -231,35 +279,35 @@
 			]
 		},
 		"controller/user/UserController.sol": {
-			"keccak256": "0x2d5f73046f1616686182eb527e9e52d20ce293cf8845cbe7db50e7de62bae7c9",
+			"keccak256": "0xa36959077a02c2467e6fb9bdcc76c598bd0c2c51263e36bfd25591a0573a7d6f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://662be697ae0b266eec32aa242c5e08002b76873a2f976f80146b25350d83378d",
-				"dweb:/ipfs/QmSL2ssM1Sagf69P7brwjgMcdRjQvXTJDeKdmrnHY4h4ZD"
+				"bzz-raw://ed7d439aa02e7c21041f8a93f5c6401731eb9d25e1dd57db0b1d64400f041811",
+				"dweb:/ipfs/QmXiay2XeSdEpUztwyyGAczuUjFWTM96YiuNmoFeQXxfRs"
 			]
 		},
 		"cursor/user/UserDatabaseCursor.sol": {
-			"keccak256": "0x28f0cad5d769809952a878877b6b46bff16571d03a330fe024652eef5630ebba",
+			"keccak256": "0x822e0deda4aa033f5ca0d54cf76706fbec6232f83b9d7e2363b679e49891f517",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d7a185545251622f9854dea499c85db327b4026ba9ae54398a708c173383d7ea",
-				"dweb:/ipfs/QmYzAnuZaPq8tAqcAMG6ym5Ncpf5v6baCC9iPPzFRUaLrZ"
+				"bzz-raw://664135931ed1abf246de090f313ee4359faec4c5c3070fc81d26f659eed5522c",
+				"dweb:/ipfs/QmUf8q4ZSL7Gv8ZkiVsj7EhddAcxvJg88En75pPwHWBahS"
 			]
 		},
 		"database/user/UserDatabase.sol": {
-			"keccak256": "0x080d016a523635d94e9c38ef3d99c73f95c6beae662f8b7f1819c8cdc03402ab",
+			"keccak256": "0xbb1ccb302be952f4517374f5e13c8997e36141f7fdfb00bfca0c9fc2c1f87a14",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://309c100483df1a0a3573732c981509c788c5185d77f40d37272160f42f3729dc",
-				"dweb:/ipfs/QmTwUVpZPcbib9tZyRHSrUKozxWQYsMXu6q9rFZXrjiJiz"
+				"bzz-raw://9002f4535277b144ead19e25778fd8cdf5208bd40bf96bffd8911257ae6dfcde",
+				"dweb:/ipfs/QmNfaKnakNbH1bRkxL52DZ8kKcB4QojR3PN25q8wgZVeKS"
 			]
 		},
 		"struct/user/User.sol": {
-			"keccak256": "0x3f1112cfe137e116fea4d60393e12e5a84a0c7a846733636a6238960c9d9c13e",
+			"keccak256": "0xfb03fc6c0f8d70af7026a4899f4e081077703fc1b96beb387d63ccbe34a4e476",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://25ede30abc05e52bf7381ff6f2b558e9b12339c54f0d0d1dd5dafe3e796023bf",
-				"dweb:/ipfs/QmQrr8o92XMewWGaYdC6SBUqEgMg27q2UanBq1XQjvdpMU"
+				"bzz-raw://2ffb8ff984648e2ef3a5654db6d9bb33fbeb0507599be1d58f2418463c5cc3a8",
+				"dweb:/ipfs/QmRzg38dGFDM19TpsHBNejuBpKhS6MPdyGgEXVDdFzxN9W"
 			]
 		}
 	},
