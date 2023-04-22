@@ -1,0 +1,280 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "ingressId",
+						"type": "uint256"
+					}
+				],
+				"name": "addChecked",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "batchId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "userName",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "userAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "farmerCccd",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "ingressDate",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "ingressAddress",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "contractPhoto",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "keyValue",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "ingressIsChecked",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Ingress",
+						"name": "ingress",
+						"type": "tuple"
+					}
+				],
+				"name": "addIngress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "contractPermission",
+						"type": "address"
+					}
+				],
+				"name": "addPermission",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "destroy",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllIngress",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "batchId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "userName",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "userAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "farmerCccd",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "ingressDate",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "ingressAddress",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "contractPhoto",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "keyValue",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "ingressIsChecked",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Ingress[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"database/processing/IngressDatabase.sol": "IngressDatabase"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/utils/Context.sol": {
+			"keccak256": "0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92",
+				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
+			]
+		},
+		"abstract/Ownable.sol": {
+			"keccak256": "0x8e815c5f3f649aa4088098a200dbffbd403dbf38debbf06ee4a4d984d5a38df5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3488759a9fc298c4257a614f21d95ffc74d2f09928c57b5e50c0291a08a3bbd6",
+				"dweb:/ipfs/QmQijbEMGKt7R3L4fARqZTSD41Ah7dn5Lf6G3q9JWwEmgx"
+			]
+		},
+		"database/processing/IngressDatabase.sol": {
+			"keccak256": "0x4b7b9da4e7e2cee35a3870311ecb80167da72e3f5204d74565cc242ec35e7506",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://31f469ffad9571642a07f78e08eb43f3d00132425c20230207de683a70c11039",
+				"dweb:/ipfs/QmZ2hgyPWPbeRyBAL1YDqX99hh6eZFMJgakWjPzsvvkAtf"
+			]
+		},
+		"struct/processing/Ingress.sol": {
+			"keccak256": "0x90fddc92d120102fe9fdc09186cb7bf22f6509d345f05f379003926b16289f15",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://495461251873536d96fad176a22439d24bbecfc8c3f69d893c30a7c7be631603",
+				"dweb:/ipfs/QmYR8pgjr3CXE5VX6TjJ8xyuKU18T7jmgf1MPxjCJHmFfU"
+			]
+		}
+	},
+	"version": 1
+}

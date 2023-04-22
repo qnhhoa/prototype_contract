@@ -1,0 +1,230 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "warehouseId",
+						"type": "uint256"
+					}
+				],
+				"name": "addChecked",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "contractPermission",
+						"type": "address"
+					}
+				],
+				"name": "addPermission",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "warehouseId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "warehouseName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "warehouseAddress",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "warehouseIsChecked",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Warehouse",
+						"name": "warehouse",
+						"type": "tuple"
+					}
+				],
+				"name": "addWarehouse",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "destroy",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllWarehouse",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "warehouseId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "warehouseName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "warehouseAddress",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "warehouseIsChecked",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Warehouse[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"database/processing/WarehouseDatabase.sol": "WarehouseDatabase"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/utils/Context.sol": {
+			"keccak256": "0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92",
+				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
+			]
+		},
+		"abstract/Ownable.sol": {
+			"keccak256": "0x8e815c5f3f649aa4088098a200dbffbd403dbf38debbf06ee4a4d984d5a38df5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3488759a9fc298c4257a614f21d95ffc74d2f09928c57b5e50c0291a08a3bbd6",
+				"dweb:/ipfs/QmQijbEMGKt7R3L4fARqZTSD41Ah7dn5Lf6G3q9JWwEmgx"
+			]
+		},
+		"database/processing/WarehouseDatabase.sol": {
+			"keccak256": "0xac238056cc2a7393b758cf01b945088b57a1066806ab7250fbcdc21105930f06",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8eda75bf85178667a70bb48ef4967affce8bbc252a17b026ef993fbd56d72199",
+				"dweb:/ipfs/QmYnXh9A5Wwo1jCbdFckpTFTjcWfmXKqzayadihJPNQ4pT"
+			]
+		},
+		"struct/processing/Warehouse.sol": {
+			"keccak256": "0x01bdb70a718addd2a1456eba7af75cc9c718db3beb4b01c2af4fcf80fa4fa131",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://040ce1c49d2db73e5baa70251e08397fe4dc784414f20b4232afa6c2fc421d99",
+				"dweb:/ipfs/QmeMSMZpQxhWWuqwSZkixSPcfTEp4sayzN9Kqupk8osZ5S"
+			]
+		}
+	},
+	"version": 1
+}
