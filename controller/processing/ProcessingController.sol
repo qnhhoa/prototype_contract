@@ -52,6 +52,7 @@ contract ProcessingController is
     {}
 
     function addStep1(
+        uint256 batchId,
         string memory productName,
         string memory date,
         string memory location,
@@ -62,6 +63,7 @@ contract ProcessingController is
     ) public {
         Step1 memory item = Step1(
             0,
+            batchId,
             productName,
             date,
             location,
@@ -80,6 +82,7 @@ contract ProcessingController is
 
     function addStep2(
         uint256 productCode,
+        uint256 batchId,
         string memory productName,
         string memory date,
         string memory location,
@@ -90,6 +93,7 @@ contract ProcessingController is
     ) public {
         Step2 memory item = Step2(
             productCode,
+            batchId,
             productName,
             date,
             location,
@@ -108,6 +112,7 @@ contract ProcessingController is
 
     function addStep3(
         uint256 productCode,
+        uint256 batchId,
         string memory productName,
         string memory date,
         string memory location,
@@ -118,6 +123,7 @@ contract ProcessingController is
     ) public {
         Step3 memory item = Step3(
             productCode,
+            batchId,
             productName,
             date,
             location,
@@ -136,6 +142,7 @@ contract ProcessingController is
 
     function addStep4(
         uint256 productCode,
+        uint256 batchId,
         string memory productName,
         string memory date,
         string memory location,
@@ -146,6 +153,7 @@ contract ProcessingController is
     ) public {
         Step4 memory item = Step4(
             productCode,
+            batchId,
             productName,
             date,
             location,
@@ -164,6 +172,7 @@ contract ProcessingController is
 
     function addStep5(
         uint256 productCode,
+        uint256 batchId,
         string memory productName,
         string memory date,
         string memory location,
@@ -174,6 +183,7 @@ contract ProcessingController is
     ) public {
         Step5 memory item = Step5(
             productCode,
+            batchId,
             productName,
             date,
             location,
@@ -192,6 +202,7 @@ contract ProcessingController is
 
     function addStep6(
         uint256 productCode,
+        uint256 batchId,
         string memory productName,
         string memory date,
         string memory location,
@@ -202,6 +213,7 @@ contract ProcessingController is
     ) public {
         Step6 memory item = Step6(
             productCode,
+            batchId,
             productName,
             date,
             location,
@@ -220,6 +232,7 @@ contract ProcessingController is
 
     function addStep7(
         uint256 productCode,
+        uint256 batchId,
         string memory productName,
         string memory date,
         string memory location,
@@ -230,6 +243,7 @@ contract ProcessingController is
     ) public {
         Step7 memory item = Step7(
             productCode,
+            batchId,
             productName,
             date,
             location,
@@ -248,6 +262,7 @@ contract ProcessingController is
 
     function addStep8(
         uint256 productCode,
+        uint256 batchId,
         string memory productName,
         string memory date,
         string memory location,
@@ -258,6 +273,7 @@ contract ProcessingController is
     ) public {
         Step8 memory item = Step8(
             productCode,
+            batchId,
             productName,
             date,
             location,
