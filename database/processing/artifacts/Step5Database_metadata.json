@@ -1,0 +1,280 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "Step5Id",
+						"type": "uint256"
+					}
+				],
+				"name": "addChecked",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "contractPermission",
+						"type": "address"
+					}
+				],
+				"name": "addPermission",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "productCode",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "productName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "date",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "location",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "photo",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "userName",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "userCccd",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "categories",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "step5IsChecked",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Step5",
+						"name": "item",
+						"type": "tuple"
+					}
+				],
+				"name": "addStep5",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "destroy",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllStep5",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "productCode",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "productName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "date",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "location",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "photo",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "userName",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "userCccd",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "categories",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "step5IsChecked",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Step5[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"database/processing/Step5Database.sol": "Step5Database"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/utils/Context.sol": {
+			"keccak256": "0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92",
+				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
+			]
+		},
+		"abstract/Ownable.sol": {
+			"keccak256": "0x8e815c5f3f649aa4088098a200dbffbd403dbf38debbf06ee4a4d984d5a38df5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3488759a9fc298c4257a614f21d95ffc74d2f09928c57b5e50c0291a08a3bbd6",
+				"dweb:/ipfs/QmQijbEMGKt7R3L4fARqZTSD41Ah7dn5Lf6G3q9JWwEmgx"
+			]
+		},
+		"database/processing/Step5Database.sol": {
+			"keccak256": "0xaec84e5bbc2e18f4efc1198c25a317c8b76f74c0c7bd282f9bf1894db8012fd2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ffbe317028527cd53d31bd0c7ba7be21520640ee9edc222b967d3d9e8902af56",
+				"dweb:/ipfs/QmdZDQdGZsxPUmt67cJhSTjo9WqaPdsKsurCKhz4gfxkzb"
+			]
+		},
+		"struct/processing/Step5.sol": {
+			"keccak256": "0x01fbfaa8ed2ffe63fd8c0ebb0807f16cb3f70b918bdf9e6abd2534f0c1d8e268",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f919c3498ac508b65c5e3e5b410e5e6170d118c13709b7ac2e558d1a7d4cfa5c",
+				"dweb:/ipfs/Qmb6icdytk2c7ZJ2dPmijaVvEJDKyCRvbFJz2Lhg1K3uM4"
+			]
+		}
+	},
+	"version": 1
+}
