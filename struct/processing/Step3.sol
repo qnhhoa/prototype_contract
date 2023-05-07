@@ -3,6 +3,7 @@ pragma solidity >=0.8.12 <0.9.0;
 
 struct Step3 {
     uint256 productCode;
+    uint256 batchId;
     string productName;
     string date;
     string location;
