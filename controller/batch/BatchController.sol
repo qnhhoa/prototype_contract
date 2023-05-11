@@ -11,10 +11,10 @@ contract BatchController is Ownable, BatchDatabaseCursor {
         BatchDatabaseCursor(batchDatabaseContractAddress)
     {}
 
-    function addBatch(string memory batchName,uint256 numOfProcess, string memory categories)
+    function addBatch(uint256 userId, uint256 teamId, string memory batchName,uint256 numOfProcess, string memory categories)
         public
     {
-        Batch memory item = Batch(0, batchName,numOfProcess,categories,false);
+        Batch memory item = Batch(0,userId,teamId,batchName,numOfProcess,categories,false);
         batchDatabase.addBatch(item);
     }
 
