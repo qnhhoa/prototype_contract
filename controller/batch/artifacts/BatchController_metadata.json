@@ -38,6 +38,16 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "userId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "teamId",
+						"type": "uint256"
+					},
+					{
 						"internalType": "string",
 						"name": "batchName",
 						"type": "string"
@@ -87,6 +97,16 @@
 							{
 								"internalType": "uint256",
 								"name": "batchId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "userId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "teamId",
 								"type": "uint256"
 							},
 							{
@@ -196,11 +216,11 @@
 			]
 		},
 		"controller/batch/BatchController.sol": {
-			"keccak256": "0x098633bdc2cebdac7c5926098aec37f0787be4b1fb56616c7bdc58f383c4e98d",
+			"keccak256": "0x7529eeec40bda768119ccecacad043018f4020ddd3f5726794da8f1e907d4127",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://feba361717121caec4a4a7bd7a609f7682027e72b89b9aeb7b3757998357f58a",
-				"dweb:/ipfs/QmSDRrbPmJVqWobLG63p8gsZWfijh79T3QbqevJeeqaAzs"
+				"bzz-raw://e864656f097ff9871703ca88cf2ff2d573ea35206b94b29ab41ecf7745cb2131",
+				"dweb:/ipfs/QmZoFNDdL7CpNovosvooRcncfFckZGTfSGXG4kTXJg5buH"
 			]
 		},
 		"cursor/batch/BatchDatabaseCursor.sol": {
@@ -220,11 +240,11 @@
 			]
 		},
 		"struct/batch/batch.sol": {
-			"keccak256": "0xa51d6af13ffcca488cda75e89bd9b2165385a1998493a3174e821910b985c961",
+			"keccak256": "0xcf77fb3e63a8dfed10da12f757cde0bbb6bc9b2b91d8a48ff081a2aec3e57e61",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://419e9b0d158c5103e15e63fcd7dcf7bc3b7a32709324849a224cd48260c8bbe1",
-				"dweb:/ipfs/QmYt959zoe9q7eRrxUKyriyHRTqRgLfoT7TsUb3YpWWAQ2"
+				"bzz-raw://c6f2350ef6a69a4493bd5acb010c4c677152bd94af4d6cb22dfdc8f17cd388f0",
+				"dweb:/ipfs/QmSfWVLxku6jJFfDsSS6rPwGHdGXbJp7EzNSyevTr4pEAe"
 			]
 		}
 	},

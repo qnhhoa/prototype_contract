@@ -39,6 +39,16 @@
 								"type": "uint256"
 							},
 							{
+								"internalType": "uint256",
+								"name": "userId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "teamId",
+								"type": "uint256"
+							},
+							{
 								"internalType": "string",
 								"name": "batchName",
 								"type": "string"
@@ -111,6 +121,16 @@
 							{
 								"internalType": "uint256",
 								"name": "batchId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "userId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "teamId",
 								"type": "uint256"
 							},
 							{
@@ -228,11 +248,11 @@
 			]
 		},
 		"struct/batch/batch.sol": {
-			"keccak256": "0xa51d6af13ffcca488cda75e89bd9b2165385a1998493a3174e821910b985c961",
+			"keccak256": "0xcf77fb3e63a8dfed10da12f757cde0bbb6bc9b2b91d8a48ff081a2aec3e57e61",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://419e9b0d158c5103e15e63fcd7dcf7bc3b7a32709324849a224cd48260c8bbe1",
-				"dweb:/ipfs/QmYt959zoe9q7eRrxUKyriyHRTqRgLfoT7TsUb3YpWWAQ2"
+				"bzz-raw://c6f2350ef6a69a4493bd5acb010c4c677152bd94af4d6cb22dfdc8f17cd388f0",
+				"dweb:/ipfs/QmSfWVLxku6jJFfDsSS6rPwGHdGXbJp7EzNSyevTr4pEAe"
 			]
 		}
 	},
