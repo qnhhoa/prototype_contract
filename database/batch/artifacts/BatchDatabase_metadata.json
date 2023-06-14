@@ -64,6 +64,11 @@
 								"type": "string"
 							},
 							{
+								"internalType": "string",
+								"name": "verifyCode",
+								"type": "string"
+							},
+							{
 								"internalType": "bool",
 								"name": "batchIsChecked",
 								"type": "bool"
@@ -146,6 +151,11 @@
 							{
 								"internalType": "string",
 								"name": "categories",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "verifyCode",
 								"type": "string"
 							},
 							{
@@ -248,11 +258,11 @@
 			]
 		},
 		"struct/batch/batch.sol": {
-			"keccak256": "0xcf77fb3e63a8dfed10da12f757cde0bbb6bc9b2b91d8a48ff081a2aec3e57e61",
+			"keccak256": "0xad257ae70ddcacd7701e185c5858a5796cb8facd53104b6fc6e03232266cb108",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c6f2350ef6a69a4493bd5acb010c4c677152bd94af4d6cb22dfdc8f17cd388f0",
-				"dweb:/ipfs/QmSfWVLxku6jJFfDsSS6rPwGHdGXbJp7EzNSyevTr4pEAe"
+				"bzz-raw://072cb1d8a497e0dd15359aa0ead925fb6fb3e82a9b2d882ceb1c3058111723f0",
+				"dweb:/ipfs/QmYWb7E41ZYYBNUxyYAyLckEESVGCPEPeuGrwoSEXcti8v"
 			]
 		}
 	},

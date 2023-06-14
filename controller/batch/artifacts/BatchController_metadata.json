@@ -61,6 +61,11 @@
 						"internalType": "string",
 						"name": "categories",
 						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "verifyCode",
+						"type": "string"
 					}
 				],
 				"name": "addBatch",
@@ -122,6 +127,11 @@
 							{
 								"internalType": "string",
 								"name": "categories",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "verifyCode",
 								"type": "string"
 							},
 							{
@@ -216,11 +226,11 @@
 			]
 		},
 		"controller/batch/BatchController.sol": {
-			"keccak256": "0x7529eeec40bda768119ccecacad043018f4020ddd3f5726794da8f1e907d4127",
+			"keccak256": "0x206838cb64c5c4a50ad56497ebc752deb7f54d627c040666c18b021621aaae2c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e864656f097ff9871703ca88cf2ff2d573ea35206b94b29ab41ecf7745cb2131",
-				"dweb:/ipfs/QmZoFNDdL7CpNovosvooRcncfFckZGTfSGXG4kTXJg5buH"
+				"bzz-raw://aad3213da4353e4cec8e88d7d7f9d82ba73562b9ceb957596e579b2410613dec",
+				"dweb:/ipfs/QmY1r6SNhLupKfAfq8ZB6X5KAf5XVV1tpCduFowNgJUUkU"
 			]
 		},
 		"cursor/batch/BatchDatabaseCursor.sol": {
@@ -240,11 +250,11 @@
 			]
 		},
 		"struct/batch/batch.sol": {
-			"keccak256": "0xcf77fb3e63a8dfed10da12f757cde0bbb6bc9b2b91d8a48ff081a2aec3e57e61",
+			"keccak256": "0xad257ae70ddcacd7701e185c5858a5796cb8facd53104b6fc6e03232266cb108",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c6f2350ef6a69a4493bd5acb010c4c677152bd94af4d6cb22dfdc8f17cd388f0",
-				"dweb:/ipfs/QmSfWVLxku6jJFfDsSS6rPwGHdGXbJp7EzNSyevTr4pEAe"
+				"bzz-raw://072cb1d8a497e0dd15359aa0ead925fb6fb3e82a9b2d882ceb1c3058111723f0",
+				"dweb:/ipfs/QmYWb7E41ZYYBNUxyYAyLckEESVGCPEPeuGrwoSEXcti8v"
 			]
 		}
 	},

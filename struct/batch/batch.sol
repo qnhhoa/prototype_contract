@@ -8,5 +8,6 @@ struct Batch {
     string batchName;
     uint256 numOfProcess;
     string categories;
+    string verifyCode;
     bool batchIsChecked;
 }

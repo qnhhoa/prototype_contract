@@ -11,6 +11,11 @@
 						"internalType": "address",
 						"name": "userDatabaseContractAddress",
 						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "ownerDatabaseContractAddress",
+						"type": "address"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -34,6 +39,44 @@
 				],
 				"name": "OwnershipTransferred",
 				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "batchId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "productName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "ownerName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "dateTime",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "ownerEmail",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "ownerPhoneNumber",
+						"type": "string"
+					}
+				],
+				"name": "addOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			},
 			{
 				"inputs": [
@@ -101,6 +144,56 @@
 				"name": "destroy",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllOwner",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "batchId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "productName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "ownerName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "dateTime",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "ownerEmail",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "ownerPhoneNumber",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "ownerIsChecked",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Product_Owner[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -247,6 +340,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "ownerDatabase",
+				"outputs": [
+					{
+						"internalType": "contract OwnerDatabase",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -324,11 +430,19 @@
 			]
 		},
 		"controller/user/UserController.sol": {
-			"keccak256": "0x746845bc2641ef7142989d353e1a5bc4bc4f5f60d821eb50390da61443eccb33",
+			"keccak256": "0x1c9cc68cf188cc2f3cd4a0bb2b1b4a4c536dc22769c10946203b9e011b219fb2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6f65ecf3c6462d7dfbe13a038c9e712c56922e4dec494c4d6ae44a73ac40d4d7",
-				"dweb:/ipfs/QmWRq6wwp8suXKXVitomtN4SBBY4svXQqxmSfSP12BEbUS"
+				"bzz-raw://f8bf1c4e42d0e30dd1600e4f9ef33d8fa50be1ec06c1fabc48f22fb0d03fdf38",
+				"dweb:/ipfs/QmVUkifUWMWBqpHQJ9Sdr7QujnQmsUqzxAqEm8NiU1FaYu"
+			]
+		},
+		"cursor/user/OwnerDatabaseCursor.sol": {
+			"keccak256": "0x72939fc22ddcaa66a9dcc4e21768e5e3ccb2f7f7fe07f97765d91ab9a700888b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://854ae83c683cd965cb829157d89def35415bf7cc76646b3770cce28e09ae9757",
+				"dweb:/ipfs/QmY46CgELxqALqSQUfB52ZMAfRyZrPKiB9HD8nqYZyGoxu"
 			]
 		},
 		"cursor/user/UserDatabaseCursor.sol": {
@@ -339,12 +453,28 @@
 				"dweb:/ipfs/QmUf8q4ZSL7Gv8ZkiVsj7EhddAcxvJg88En75pPwHWBahS"
 			]
 		},
+		"database/user/OwnerDatabase.sol": {
+			"keccak256": "0x42199907ed44391137bc8597fbf79efe7f50425c670e2965a9a80cbe6c651a3c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://45f3e893ffda95408dddfd5bba62295d7446b7adad9635269f8328ce68fac63e",
+				"dweb:/ipfs/QmbtXocGNHR9vUr6BE7WfLsgTuxByouauVKy1DybZvWgmu"
+			]
+		},
 		"database/user/UserDatabase.sol": {
 			"keccak256": "0xbb1ccb302be952f4517374f5e13c8997e36141f7fdfb00bfca0c9fc2c1f87a14",
 			"license": "MIT",
 			"urls": [
 				"bzz-raw://9002f4535277b144ead19e25778fd8cdf5208bd40bf96bffd8911257ae6dfcde",
 				"dweb:/ipfs/QmNfaKnakNbH1bRkxL52DZ8kKcB4QojR3PN25q8wgZVeKS"
+			]
+		},
+		"struct/user/Owner.sol": {
+			"keccak256": "0xf08a7e6e6ea62464fca85a3dc3376e4066ec60225ef5819ec9f7fbef200c9753",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8d24c52ae577a71ac7b6c0ae9867a391d025147131b2d525c3586c5b39d49357",
+				"dweb:/ipfs/QmUau5n6KR3DZqTG3qGqDgN7oX2xwZxEnwj2x8P8wzmcGv"
 			]
 		},
 		"struct/user/User.sol": {
