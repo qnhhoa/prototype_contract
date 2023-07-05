@@ -1,0 +1,242 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "purchaseDatabaseContractAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "productCode",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "batchId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "purchaseLocated",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "purchaseDate",
+						"type": "string"
+					}
+				],
+				"name": "addPurchase",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "destroy",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllPurchase",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "purchaseId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "productCode",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "batchId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "userAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "purchaseLocated",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "purchaseDate",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Purchase[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "purchaseDatabase",
+				"outputs": [
+					{
+						"internalType": "contract PurchaseDatabase",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"controller/purchase/PurchaseController.sol": "PurchaseController"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/utils/Context.sol": {
+			"keccak256": "0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92",
+				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
+			]
+		},
+		"abstract/Ownable.sol": {
+			"keccak256": "0x8e815c5f3f649aa4088098a200dbffbd403dbf38debbf06ee4a4d984d5a38df5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3488759a9fc298c4257a614f21d95ffc74d2f09928c57b5e50c0291a08a3bbd6",
+				"dweb:/ipfs/QmQijbEMGKt7R3L4fARqZTSD41Ah7dn5Lf6G3q9JWwEmgx"
+			]
+		},
+		"controller/purchase/PurchaseController.sol": {
+			"keccak256": "0x8bc481c6db7204451bb78ca49ee900adb52e2802854b1968636a4f1754581242",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d0b8fdd5a0026bbda81bfaa30b9d3c68ff2a2b7cab063e959464400b4f12cfa1",
+				"dweb:/ipfs/QmQFxzjDRR6ERpbqKfj3G1cZExDSFBEXLJCjBaCnSc6rJW"
+			]
+		},
+		"cursor/purchase/PurchaseDatabaseCursor.sol": {
+			"keccak256": "0xe3c0c38da9952049c0a4798b6d55fcb47fff1bfd63b3f93b5a93697e5151f9ad",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://393a420d0899efe82d7a54d759e933fef6b7c9c5b985b77ff49b15857ae4f5ad",
+				"dweb:/ipfs/QmeFyNMAMaQJfbCCMCnBiZVgT34ceuhBDT4UXewQBwZBXN"
+			]
+		},
+		"database/purchase/PurchaseDatabase.sol": {
+			"keccak256": "0xa2623d171d53b856802713339de49ecd055d21cdf6bde82dc26046a04898ccc1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e064fd588d038173ce8b680259623ce06f849d703d5a3a5661f3bc1abbbdc666",
+				"dweb:/ipfs/QmcBznrBUTHXHTRD2ZPpxcVVA8CJqSHhJsHbWGH8UvHfPi"
+			]
+		},
+		"struct/purchase/purchase.sol": {
+			"keccak256": "0xc5515af46018cc06bfa14c6073fa6256eae67526b8d3ca915a5c20f71bae8584",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b9f0ad3bb863876c5f9460a21f14ade5413debb76260d8cf9f9bca3cefa3b71f",
+				"dweb:/ipfs/QmR19vuSK2zDRSaSXP3mafFmqdeEMx2sMce8wMNawy69xT"
+			]
+		}
+	},
+	"version": 1
+}
