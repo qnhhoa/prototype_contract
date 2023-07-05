@@ -6,6 +6,7 @@ struct Purchase {
     uint256 productCode;
     uint256 batchId;
     address userAddress;
+    string customerName;
     string purchaseLocated;
     string purchaseDate;
 }

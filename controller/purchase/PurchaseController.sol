@@ -11,10 +11,10 @@ contract PurchaseController is Ownable, PurchaseDatabaseCursor {
         PurchaseDatabaseCursor(purchaseDatabaseContractAddress)
     {}
 
-    function addPurchase(uint256 productCode, uint256 batchId, string memory purchaseLocated, string memory purchaseDate)
+    function addPurchase(uint256 productCode, uint256 batchId, string memory customerName, string memory purchaseLocated, string memory purchaseDate)
         public
     {
-        Purchase memory item = Purchase(0,productCode,batchId,_msgSender(),purchaseLocated,purchaseDate);
+        Purchase memory item = Purchase(0,productCode,batchId,_msgSender(),customerName,purchaseLocated,purchaseDate);
         purchaseDatabase.addPurchase(item);
     }
 
