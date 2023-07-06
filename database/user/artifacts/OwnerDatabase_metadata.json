@@ -33,11 +33,52 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "BatchId",
+						"name": "productOwnerId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "customerId",
 						"type": "uint256"
 					}
 				],
-				"name": "addChecked",
+				"name": "addCustomerId",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "productOwnerId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "distributorId",
+						"type": "uint256"
+					}
+				],
+				"name": "addDistributorId",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "productOwnerId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "martketId",
+						"type": "uint256"
+					}
+				],
+				"name": "addMartketId",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -48,38 +89,48 @@
 						"components": [
 							{
 								"internalType": "uint256",
+								"name": "productOwnerId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
 								"name": "batchId",
 								"type": "uint256"
 							},
 							{
-								"internalType": "string",
-								"name": "productName",
-								"type": "string"
+								"internalType": "uint256",
+								"name": "productCode",
+								"type": "uint256"
 							},
 							{
-								"internalType": "string",
-								"name": "ownerName",
-								"type": "string"
+								"internalType": "uint256",
+								"name": "manufacturerId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "distributorIds",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "martketIds",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "staffIds",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "customerIds",
+								"type": "uint256[]"
 							},
 							{
 								"internalType": "string",
 								"name": "dateTime",
 								"type": "string"
-							},
-							{
-								"internalType": "string",
-								"name": "ownerEmail",
-								"type": "string"
-							},
-							{
-								"internalType": "string",
-								"name": "ownerPhoneNumber",
-								"type": "string"
-							},
-							{
-								"internalType": "bool",
-								"name": "ownerIsChecked",
-								"type": "bool"
 							}
 						],
 						"internalType": "struct Product_Owner",
@@ -106,6 +157,24 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "productOwnerId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "staffId",
+						"type": "uint256"
+					}
+				],
+				"name": "addStaffId",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "destroy",
 				"outputs": [],
@@ -120,38 +189,48 @@
 						"components": [
 							{
 								"internalType": "uint256",
+								"name": "productOwnerId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
 								"name": "batchId",
 								"type": "uint256"
 							},
 							{
-								"internalType": "string",
-								"name": "productName",
-								"type": "string"
+								"internalType": "uint256",
+								"name": "productCode",
+								"type": "uint256"
 							},
 							{
-								"internalType": "string",
-								"name": "ownerName",
-								"type": "string"
+								"internalType": "uint256",
+								"name": "manufacturerId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "distributorIds",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "martketIds",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "staffIds",
+								"type": "uint256[]"
+							},
+							{
+								"internalType": "uint256[]",
+								"name": "customerIds",
+								"type": "uint256[]"
 							},
 							{
 								"internalType": "string",
 								"name": "dateTime",
 								"type": "string"
-							},
-							{
-								"internalType": "string",
-								"name": "ownerEmail",
-								"type": "string"
-							},
-							{
-								"internalType": "string",
-								"name": "ownerPhoneNumber",
-								"type": "string"
-							},
-							{
-								"internalType": "bool",
-								"name": "ownerIsChecked",
-								"type": "bool"
 							}
 						],
 						"internalType": "struct Product_Owner[]",
@@ -240,19 +319,19 @@
 			]
 		},
 		"database/user/OwnerDatabase.sol": {
-			"keccak256": "0x42199907ed44391137bc8597fbf79efe7f50425c670e2965a9a80cbe6c651a3c",
+			"keccak256": "0x21ce2f739050e8766c12f2c2575da9b91c74bbc1cb0d85b4aaef07a23ea62423",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://45f3e893ffda95408dddfd5bba62295d7446b7adad9635269f8328ce68fac63e",
-				"dweb:/ipfs/QmbtXocGNHR9vUr6BE7WfLsgTuxByouauVKy1DybZvWgmu"
+				"bzz-raw://2124776cc4cd77e9970bea06708d6bcc96cbee5ab809153f9e57e0820348d1f7",
+				"dweb:/ipfs/QmdsLYz1RMX5FXfcQnDSLSsRiMy5ahKmJ8yQxDhjxh9KjG"
 			]
 		},
 		"struct/user/Owner.sol": {
-			"keccak256": "0xf08a7e6e6ea62464fca85a3dc3376e4066ec60225ef5819ec9f7fbef200c9753",
+			"keccak256": "0xe8966aa2080a1b21d149ed077c9dbf08827c2d7477b73b680f4d6c03d1efb873",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8d24c52ae577a71ac7b6c0ae9867a391d025147131b2d525c3586c5b39d49357",
-				"dweb:/ipfs/QmUau5n6KR3DZqTG3qGqDgN7oX2xwZxEnwj2x8P8wzmcGv"
+				"bzz-raw://34ba06ce71a9185ab5ad97e63275e9147078c19bfb4faca5d80e993445507c4e",
+				"dweb:/ipfs/Qmd9Fsdi8dG4uszX4KFnEMwkhzasA8YZCyiQkQnK5Hkaeg"
 			]
 		}
 	},
