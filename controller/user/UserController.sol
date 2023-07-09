@@ -85,7 +85,7 @@ contract UserController is Ownable, UserDatabaseCursor, OwnerDatabaseCursor {
         uint256 productOwnerId,
         uint256 martketId
     ) public {
-        ownerDatabase.addDistributorId(productOwnerId, martketId);
+        ownerDatabase.addMartketId(productOwnerId, martketId);
     }
 
     function addStaffId(
